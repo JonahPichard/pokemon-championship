@@ -3,4 +3,8 @@
 #define __CLIENT__H
 
 #include "client/hello.hpp"
+#include "client/Move.hpp"
+#include "client/MovePackage.hpp"
+#include "client/Effect.hpp"
+#include "client/EffectPackage.hpp"
 #endif
