@@ -28,10 +28,11 @@ Turn-based Pokémon duels based on a championship system.
 
 1. `mkdir build && cd build`
 2. `cmake ..`
-3. `make`
-4. `cd ..`
-5. `./bin/client` (for example)
-6. `gprof ./bin/client gmon.out > analysis.txt`
+3. `cmake --build . --target code-coverage`
+4. `make`
+5. `cd ..`
+6. `./bin/client` (for example)
+7. `gprof ./bin/client gmon.out > analysis.txt`
 
 ## Repository
 
