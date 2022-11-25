@@ -36,10 +36,10 @@ set(BUILD_CODE_COVERAGE ON CACHE BOOL
   "Set BUILD_CODE_COVERAGE to OFF to disable code coverage")
 if(BUILD_CODE_COVERAGE AND NOT UNIX)
   message(WARNING "Code coverage is only available for UNIX systems")
-  set(BUILD_CODE_COVERAGE OFF)
+  set(BUILD_CODE_COVERAGE ON)
 elseif(BUILD_CODE_COVERAGE AND NOT CMAKE_COMPILER_IS_GNUCC AND NOT CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   message(WARNING "Code coverage is only available for GNU compiler and Clang compiler")
-  set(BUILD_CODE_COVERAGE OFF)
+  set(BUILD_CODE_COVERAGE ON)
 endif()
 
 message(STATUS "Code coverage: ${BUILD_CODE_COVERAGE}")
